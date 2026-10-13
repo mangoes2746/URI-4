@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quiz Furturi – Variantele 1-4</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--card:#f3f4f6;--ac:#2456d6;--ok:#16803c;--okb:#dcfce7;--no:#b91c1c;--nob:#fee2e2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171c;--fg:#eee;--card:#23262e;--ac:#6d93ff;--ok:#6ee79a;--okb:#12361f;--no:#ff8a8a;--nob:#3d1717}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,sans-serif;padding:14px;max-width:640px;margin:auto}
+h1{font-size:1.2rem;margin:0 0 10px}
+.tabs{display:flex;gap:6px;margin-bottom:12px}
+.tabs button{flex:1;padding:10px;border:0;border-radius:8px;background:var(--card);color:var(--fg);font-weight:600}
+.tabs .on{background:var(--ac);color:#fff}
+.q{background:var(--card);border-radius:10px;padding:12px;margin-bottom:12px}
+.q b{display:block;margin-bottom:8px}
+.o{display:block;width:100%;text-align:left;padding:10px;margin:5px 0;border:1px solid #8884;border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
+.o.ok{background:var(--okb);border-color:var(--ok)}
+.o.no{background:var(--nob);border-color:var(--no)}
+#bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:6px 0;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+#rs{padding:8px 14px;border:0;border-radius:8px;background:var(--ac);color:#fff}
+</style></head><body>
+<h1>🚔 Quiz Furturi – Test M4</h1><p style="margin:0 0 12px;opacity:.75">48 de întrebări grilă, 4 variante. Alege o variantă sau „Mix” (toate întrebările, amestecate).</p>
+<div class="tabs" id="tabs"></div>
+<div id="bar"><span id="sc"></span><button id="rs">Reia</button></div>
+<div id="qs"></div><div id="res"></div>
+<script>
+const V={
+1:[
+["Reprezintă activitate informativ-operativă pentru prevenirea și combaterea furturilor de și din autovehicule:",["deplasarea la locul comiterii infracțiunii împreună cu specialistul criminalist pentru efectuarea cercetării la fața locului","dispunerea declanșării acțiunii de depistare a autoturismului furat","identificarea locurilor unde se săvârșesc furturi de și din autovehicule și unde se valorifică frecvent autovehicule și bunuri provenite din comiterea furturilor"],2],
+["În cazul sesizărilor telefonice, prin sistemul 112, privind furturile de și din autovehicule, polițistul care primește sesizarea va desfășura următoarea activitate:",["audiază partea vătămată","primește și consemnează sesizarea","raportează evenimentul ofițerului care asigură conducerea unității"],1],
+["Unul dintre modurile de operare folosite de infractori la comiterea furturilor de și din autovehicule este:",["falsificarea dispozitivelor speciale de marcat","forțarea și deschiderea geamului deflector al portierei, introducerea mâinii pentru a acționa asupra mecanismului de închidere","transportarea materialului lemnos folosind autoturisme cu numere de înmatriculare falsificate"],1],
+["Pentru prevenirea infracțiunilor de furt și trafic cu autovehicule furate, polițiștii din ordine publică vor desfășura în principal activitatea:",["interceptarea și controlul autovehiculelor pentru care s-a declanșat urmărirea, legitimarea persoanelor aflate în acestea și luarea măsurilor legale","verificarea competenței de cercetare a infracțiunii sesizate în funcție de prejudiciu","interceptarea și controlul autovehiculelor înmatriculate în alte state membre U.E., precum și reținerea pe o perioadă de 24 de ore a persoanelor aflate în acestea"],0],
